@@ -7,7 +7,7 @@ departamentos = response.json()
 for row in departamentos:
     numero = row["idDepartamento"]
     nombre = row["nombre"]
-    localidad = row["localidad"]
+    localidad: str = row["localidad"]
     print(f"Numero: {numero}, Nombre: {nombre}, Localidad {localidad}")
 print("Fin de programa")
 
